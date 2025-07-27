@@ -1,0 +1,63 @@
+/* Notes List - Modern Redesign */
+
+/* Reset and Base Styles */
+body, html {
+  margin: 0;
+  padding: 20px; /* Added padding to body */
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background-color: #f6f8ff;
+  color: #1a1a2e;
+}
+
+/* Full-width Notes Container */
+.notes-container {
+  padding: 20px 0;
+  width: 100%;
+  max-width: 100%; /* Changed from 1200px to 100% */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Notes Grid Layout */
+.notes-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Modern Note Card Styling */
+.note-card {
+  background: linear-gradient(145deg, #ffffff, #fcfdff);
+  border: 1px solid rgba(234, 238, 255, 0.8);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 
+    0 4px 20px rgba(90, 79, 207, 0.05),
+    0 1px 4px rgba(90, 79, 207, 0.05);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  word-wrap: break-word;
+  width: calc(100% - 40px); /* Adjusted width with padding */
+  margin: 20px auto; /* Added margin to create space from text */
+  box-sizing: border-box;
+}
+
+/* Rest of your existing CSS remains the same... */
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .notes-list {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 24px;
+    padding: 0 20px; /* Added padding to maintain spacing */
+  }
+  
+  .note-card {
+    padding: 32px;
+    width: calc(100% - 40px); /* Full width with padding */
+  }
+}

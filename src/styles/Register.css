@@ -1,0 +1,106 @@
+/* Register.css */
+
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f3f4fd, #dde3f0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Register Container */
+.register-container {
+    width: 380px;
+    padding: 35px 30px;
+    background: linear-gradient(135deg, #ffffff, #f1f4ff);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+h2 {
+    margin-bottom: 25px;
+    color: #4a3aff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Input Fields */
+input {
+    display: block;
+    margin: 15px auto;
+    padding: 14px 18px;
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a3aff;
+    box-shadow: 0 0 8px rgba(74, 58, 255, 0.3);
+    background-color: #ffffff;
+}
+
+/* Button Styling */
+button {
+    padding: 14px 20px;
+    width: 100%;
+    background: linear-gradient(to right, #4a3aff, #5f66ff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #5f66ff, #6f72ff);
+    transform: scale(1.05);
+}
+
+/* Google Login Button */
+.google-login {
+    background-color: #db4437;
+    padding: 14px 18px;
+    margin-top: 18px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.google-login:hover {
+    background-color: #c1351d;
+}
+
+/* Animation for Containers */
+.register-container {
+    animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
